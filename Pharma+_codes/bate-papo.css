@@ -1,0 +1,74 @@
+/* Estilos para a tela de chat estilo WhatsApp */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.chat {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.received {
+    background-color: #f0f0f0;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #25d366;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.message-input {
+    display: flex;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #128c7e;
+}
