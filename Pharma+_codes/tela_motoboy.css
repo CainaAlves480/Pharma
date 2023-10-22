@@ -104,3 +104,61 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* Adicione esta regra no início para definir o tamanho base da fonte */
+html {
+    font-size: 16px;
+}
+
+/* ... o resto do seu CSS ... */
+
+/* Estilos para telas menores, como smartphones */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-item {
+        margin-bottom: 20px;
+    }
+
+    .delivery-request {
+        max-width: 100%;
+    }
+
+    .delivery-request input {
+        width: 100%;
+    }
+}
+
+/* Estilos para tablets e telas maiores */
+@media (min-width: 769px) {
+    main {
+        padding: 20px;
+    }
+
+    .dashboard {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .dashboard-item {
+        margin-bottom: 0;
+    }
+}
+
+/* Ajuste o tamanho da fonte para telas menores, se necessário */
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+}

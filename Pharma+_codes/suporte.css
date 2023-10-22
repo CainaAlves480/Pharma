@@ -20,6 +20,66 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos do menu dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(9, 198, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -54,4 +114,46 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Adicione esta regra no início para definir o tamanho base da fonte */
+html {
+    font-size: 16px;
+}
+
+/* ... o resto do seu CSS ... */
+
+/* Estilos para telas menores, como smartphones */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para tablets e telas maiores */
+@media (min-width: 601px) {
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Ajuste o tamanho da fonte para telas menores, se necessário */
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
 }
