@@ -3,7 +3,7 @@
     margin: 0%;
 }
 body{
-    background-color: darkgray;
+    background-color: white;
 }
 .primeiro{
     margin-bottom: 10px;
@@ -11,32 +11,46 @@ body{
     text-align: center;
     background-color: rgb(235, 144, 32);
     color: aliceblue;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 30px;
 
 }
-.segundo{
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 10px;
-    background-color: rgb(232, 239, 243);
-    border: 5px solid rgba(74, 74, 74, 0.133);
-    box-shadow:5px 5px 5px rgba(74, 74, 74, 0.133);
+
+.retorno {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: block;
 }
-.espe{
-    position: relative;
-    left: 100px;
+
+
+.retorno:hover {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.segundo {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+}
+
+.espe {
+    margin-top: 10px;
 }
 
 button {
-    border-radius: 10px;
-    padding: 10px 20px;
-    background-color: #3498db; 
-    color: #ffffff; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
     border: none;
-    cursor: pointer; 
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #2c3e50;
+    background-color: #45a049;
 }

@@ -112,41 +112,99 @@ footer {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* Para telas menores, como smartphones */
-@media (max-width: 768px) {
-    header {
-        padding: 10px 0;
-    }
+
+/* Adicione este bloco de estilo para estilizar o ícone do menu */
+.menu-icon {
+    display: none; /* Inicialmente oculto em telas maiores */
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estiliza as três setas para formar um "X" quando o menu está aberto */
+.menu-icon.open div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Adiciona regras de mídia para ajustar estilos em telas menores */
+@media screen and (max-width: 600px) {
     nav ul {
+        display: none; /* Oculta os itens de navegação em telas menores */
         flex-direction: column;
+        text-align: center;
     }
+
     nav li {
-        margin: 10px 0;
+        margin: 5px 0;
     }
-    main {
-        flex-direction: column;
+
+    .menu-icon {
+        display: block; /* Mostra o ícone do menu em telas menores */
     }
-    .product {
-        max-width: 100%;
+
+    /* Adicione um estilo específico para o menu dropdown em telas menores */
+    .dropdown-content {
+        position: static; /* Altera a posição para empilhamento em telas menores */
+        display: none;
+    }
+
+    .menu-open .dropdown-content {
+        display: block; /* Exibe o menu dropdown quando o menu está aberto */
     }
 }
 
-/* Para tablets e telas maiores */
-@media (min-width: 769px) {
-    header {
-        padding: 20px 0;
-    }
-    nav ul {
-        flex-direction: row;
-    }
-    nav li {
-        margin: 0 10px;
-    }
-    main {
-        flex-wrap: wrap;
-    }
-    .product {
-        max-width: 300px;
-    }
+
+/* Adicione ao seu arquivo tela_farmacia.css */
+
+.menu-sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 60px; /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+    transition: left 0.3s;
 }
 
+.menu-sidebar nav {
+    color: white;
+}
+
+.menu-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-sidebar li {
+    margin: 10px 0;
+}
+
+.menu-sidebar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-sidebar.open {
+    left: 0; /* Exibido quando a classe "open" está presente */
+}
