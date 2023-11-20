@@ -10,6 +10,28 @@
     <header>
         <h1>Farmácia</h1>
     </header>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>    
+
+    <div class="menu-sidebar" id="menuSidebar">
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Motoboy</a>
+                    <div class="dropdown-content">
+                        <a href="cadastro_motoboy.html">Cadastro</a><br>
+                        <a href="Bate-papo.html">Bate-Papo</a>
+                    </div>
+                </li>
+                <li><a href="tela_farmacia.html">Produtos</a></li>
+                <li><a href="faq.html">Sobre Nós</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
     <nav>
         <ul>
             <li class="dropdown">
@@ -49,5 +71,18 @@
 <footer>
     <p>&copy; 2023 Farmácia. Todos os direitos reservados Reflexia.</p>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav ul');
+        const menuSidebar = document.getElementById('menuSidebar');
+
+        menuIcon.addEventListener('click', function () {
+            nav.classList.toggle('menu-open');
+            menuIcon.classList.toggle('open');
+            menuSidebar.classList.toggle('open')
+        });
+    });
+</script>
 </body>
 </html>
