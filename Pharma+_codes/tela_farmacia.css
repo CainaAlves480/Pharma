@@ -253,3 +253,9 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+.login-google{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+}
