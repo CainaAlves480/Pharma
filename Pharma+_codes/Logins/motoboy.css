@@ -7,7 +7,7 @@ body {
     height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    background-image: linear-gradient(to right,#FFA500, rgb(248, 248, 33));
+    background-image: linear-gradient(to right,rgb(209, 3, 3), rgb(228, 228, 7));
 }
 
 h1, h2{
