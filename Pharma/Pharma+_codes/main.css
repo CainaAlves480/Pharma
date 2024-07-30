@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.geral{
+    background-color: #080D21;
+}
+.topo{
+    background-color: #0d1818;
+    padding-bottom: 3%;
+    padding: 20px; 
+    box-shadow: 3px 3px 3Px rgb(12, 12, 12);
+}
+.pesquisa{
+    width: 60%;
+    height: 30px;
+    background-color: #E9ECEC;
+    border-radius: 15px ;
+}
+.comercial{
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #A52422;
+    width: 1200px;
+    height: 225px;
+}
+.meio{
+
+    box-shadow: 10px -5px 5px black;
+   padding: 5%;
+    margin-top: 5%;
+    background-color: #E9ECEC ;
+}
+.farmacia1{
+    margin-top: 10%;
+    width: 1000px;
+    height: 200px;
+    background-color: #788475;
+    border-radius: 10px 10px 10px;
+    margin-left: 10%;
+}
+.farmacia2{
+    margin-top: 2%;
+    width: 1000px;
+    height: 200px;
+    background-color: #788475;
+    border-radius: 10px 10px 10px;
+    margin-left: 10%;
+    margin-bottom: 5% ;
+}
+.farmacia3{
+    margin-top: 2%;
+    width: 1000px;
+    height: 200px;
+    background-color: #788475;
+    border-radius: 10px 10px 10px;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-bottom: 5% ;
+}
+.rodape{    
+    margin-top: 5%;
+    background-color: #788475;
+    padding: 10%;
+}
