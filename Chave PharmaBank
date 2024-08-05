@@ -1,0 +1,9 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyDyx5TN0GiChcCq5CODw20fiE2EZrx01L0",
+  authDomain: "pharmabank-ffed2.firebaseapp.com",
+  databaseURL: "https://pharmabank-ffed2-default-rtdb.firebaseio.com",
+  projectId: "pharmabank-ffed2",
+  storageBucket: "pharmabank-ffed2.appspot.com",
+  messagingSenderId: "426667358975",
+  appId: "1:426667358975:web:649671b1a679cee162eaca"
+};
